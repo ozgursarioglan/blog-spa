@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@6.6.2/dist/sweetalert2.min.css">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script type="text/JavaScript">
+        /*
+        Koşullar
+    
+        */
+       var sayi1 = 30;
+       var sayi2 = 20;
+        if (sayi1 == sayi2) {
+
+            swal("Sayılar Biribirine Eşit");
+
+        } else if (sayi1 < sayi2) {
+
+            swal("10 20 den küçük bir sayıdır.");
+
+        } else {
+
+            console.log("Sonuç yok.");
+
+        }
+        /*
+        Örnek giriş uygulaması.
+        */
+        var username = "ali";
+        var passaword =  3783692;
+
+        if (username == "ali" && passaword == 378369 ) {
+
+            swal("Giriş Bilgileri Doğru")
+            document.write("Hoşgeldin " + username)
+            
+        } else {
+
+            swal("Giriş Bilgileri Yanlış")
+            document.write("Lütfen Giriş Yapınız")
+            
+        }
+
+         /*
+        En büyük sayıyı bulmak
+        */
+
+        var say1 = 8;
+        var say2 = 6;
+        var say3 = 7;
+        
+        if (say1 > say2 && say1 > say3) {
+
+            console.log("Sayı 1 En Büyük")
+
+        } else if (say2 > say1 && say2 > say3 ) {
+
+            console.log("Sayı 2 En Büyük")
+
+        } else {
+
+            console.log("Sayı 3 En Büyük")
+
+        }
+
+
+        var bugun = new Date().getDay();
+
+        console.log(bugun)
+
+        switch (bugun) {
+            case 0:
+            console.log("Bugün Pazar")
+            break;
+
+            case 1:
+            console.log("Bugün Pazartesi")
+            break;
+
+            case 2:
+            console.log("Bugün Salı")
+            break;
+
+            case 3:
+            console.log("Bugün Çarşamba")
+            break;
+
+            case 4:
+            console.log("Bugün Perşembe")
+            break;
+
+            case 5:
+            console.log("Bugün Cuma")
+            break;
+
+            case 6:
+            console.log("Bugün Cumartesi")
+            break;
+        }
+       
+
+        </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

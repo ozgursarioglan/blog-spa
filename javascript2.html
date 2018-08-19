@@ -88,10 +88,56 @@
      /*
     Karşılaştırma operatörleri.
     == Eşitse
-    != Eşit Değilse
+    != Eşit Değil
+    === Kesin Eşit
+    !== Kesin Eşit Değil
+    > Büyük
+    < Küçük
     <= Küçük veya Eşitse
     >= Büyük veya Eşitse
     */
+
+
+
+      /*
+    Mantıksal Öperatörler
+    && Şartlardan ikiside gerçekleşmiş olmalı.
+    || Şartlardan biri gerçekleşirse kafi.
+    */
+
+
+    var deger1 = 10;
+    var deger2 = 20;
+    var deger3 = 30;
+
+    //IF içindeki iki koşulunda sağlanması gerekiyor.
+    if (deger1 < deger2 && deger3 > deger2) {
+        console.log("10 Sayısı 20 Den Küçüktür.");
+    }
+    //IF içindeki bir koşulun sağlanması yeterli.
+    if (deger1 < deger2 || deger3 < deger2) {
+        console.log("10 Sayısı 20 Den Küçüktür.");
+        }
+
+
+
+    //Örnek
+    var ad = "Özgür";
+    var soyad = "SARIOĞLAN";
+    var yas = 23;
+    var okul = "KSÜ";
+    var is = "Şirikçi Oğlu Mensucat";
+    var tel = "05423444650";
+
+    console.log("Benim Adım: " + ad);
+    console.log("Benim Soyadım: " + soyad);
+    console.log("Benim Yaşım: " + yas);
+    console.log("Benim Okul: " + okul);
+    console.log("Benim İşim: " + is);
+    console.log("Benim Telefonum: " + tel);
+
+    console.log("Tüm Birleşik Bilgilerim: "+ad+" "+soyad+" "+yas+" "+okul+" "+is+" "+tel);
+
 
     </script>
 
