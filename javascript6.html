@@ -40,9 +40,17 @@
 
         var sehirler;
 
-        sehirler = new Array("Kahramanamras","Göksun","Elbistan")
+        sehirler = new Array("Kahramanamras ","Göksun ","Elbistan ")
 
         console.log("Şehirler: "+sehirler)
+
+       document.write(sehirler+"<code> şehirler adındaki dizi.</code><br>")
+
+        for (x in sehirler) {
+
+          document.write(sehirler[x]+"<code> for döngüsü ile bir diziyi ekrana yazdırmak.</code><br>")
+          
+        }
     
     </script>
 
