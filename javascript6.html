@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>JavaScript Diziler</h1>
 
     <script type="text/JavaScript">
     
@@ -51,12 +51,116 @@
           document.write(sehirler[x]+"<code> for döngüsü ile bir diziyi ekrana yazdırmak.</code><br>")
           
         }
-
-
         //Çok Boyutlu diziler.
 
-        
-    
+
+        /*
+        Hazır dizi fonksiyonları.
+        1- ToString, Bir diziyi virgüle ayırmış dizi değerlerine dönüştürür. Diziyi her çağıdığımızda doğal olarak bu işlemi yapar.
+        2- Join, Dizi elemanları hangi işaret ile ayırmamız gerektiğini seçebiliriz.
+        3- Pop, uygulandığı dizindeki son öğeyi seçer ve değer olarak döndürür.
+        4- Push, Diziye yeni bir eleman eklemek için kullanılır. Önce kullan sonra test et.
+        5- Shift, Dizinin ilk elemanını uçuruyor. Yince önce uygula sonra dene.
+        5- UnShift, Bir dizinin başına yeni bir öğe ekler ve diğer öğlerin numalarını değiştirir, Kaydırır.
+        6- Splice, Diziye yeni eleman ekler ve yeni eklenen elemananların yerlerini belirtimeye yarar.
+        7- Delete, Bir dizideki elemanı siler. Ama dizide çukurlar oluşur. Yani numalar değişmez.
+        8- Concat, Dizileri birleştirir ve tek dizi yapar.
+        9- Slice, Var olan diziyi belirlenen indis numarasından sonra siler ve yeni bir izi oluşturur.
+        10- Lenght, Dizideki eleman sayısını verir.
+        11- Reverse, Diziyi tersten yazıyor.
+        12- Sort, Diziyi sırlar, Harfler başta.
+        13- IndexOf, bir öğenin dizideki yerini bize söyler.
+        14- Some, dizilrin içindeki değerleri kontrol ediyoruz.
+        */
+
+        var dersler = new Array("Türkçe","Matematik","Programlama");
+
+        var ilce = new Array("Göksun","Onikişubat","Dulkadiroglu");
+
+        var markalar = new Array("Asus","MSI","HP","Dell");
+
+        var telefonlar = new Array("LG","Samsung","Apple");
+
+        var organlar = new Array("Kalp","Mide","Beyin");
+
+        var uniler = new Array("KSU","KTU","İTÜ");
+
+        var liseler = new Array("Fen Lisesi","Anadolu Lisesi","Meslek Lisesi");
+
+        var isimler = new Array("Zekiye","Hüsnü","Merve","Ali",1,4,6,0)
+
+        var yaslar = new Array(12,13)
+
+
+        //toString
+        document.write(dersler.toString()+"<code> toString fonksiyonu ile virgül ile ayrılmış halde.</code><br>");
+
+        //join
+        document.write(dersler.join(" - ")+"<code> join dizi elemanları - ile ayırdık.</code><br>");
+
+        //pop
+        document.write(dersler.pop()+"<code> pop dizin içini boşalttı ve son elamanı değer olarak döndürdü.</code><br>");
+
+        //push
+        document.write(dersler.push("Resim")+"<code> diziye yeni bir eleman ekleme.</code><br>");
+        document.write(dersler+"<br>");
+
+        //shift
+        document.write(ilce+"<br>");
+        document.write(ilce.shift()+"<code> shit kullnarak dizinin ilk elemanı uçurduk.</code><br>");
+        document.write(ilce+"<br>");
+
+        //unshift
+        document.write(markalar+"<br>");
+        document.write(markalar.unshift("Lenevo")+"<code> unshift kullnarak markalar dizisizin başına yeni bir öğe ekledik.</code><br>");
+        document.write(markalar+"<br>");
+
+        //splice
+        document.write(telefonlar+"<br>");
+        telefonlar.splice(0,0,"Asus","Nokia");
+        document.write(telefonlar+"<code> splice kullnarak telefonlar dizisine 0. numaradan başlayarak asus ve nokia ekledik.</code><br>");
+
+        //delete
+        document.write(organlar+"<br>");
+        delete organlar[0];
+        document.write(organlar+"<code> delete kullnarak 0 numaralı öğeyi sildik.</code><br>");
+        document.write(organlar[0]+"<code> tekrar 0 numaralı öğeye ulaşmak istediğimizde hata alıyoruz.</code><br>");
+
+        //concat
+        document.write(uniler+"<br>");
+        document.write(liseler+"<br>");
+        var okullar = new Array(uniler.concat(liseler));
+        document.write(okullar+"<code> concat kullnarak uniler ve liseler dizilerini birleştirdik.</code><br>")
+
+        //slice
+        kes = liseler.slice(1);
+        document.write(kes+"<code> slice kullnarak var olan bir diziyi kestik ve yeni bir dizi olulşurdurk.</code><br>")
+
+        //length
+        document.write(liseler.length+"<code> length ile liseler dizisinde kaç eleman var gördük.</code><br>");
+
+        //reverse
+        liseler.reverse();
+        document.write(liseler+"<code> reverse liseler dizisini tersten yazmış olduk.</code><br>");
+
+        //sort
+        isimler.sort();
+        document.write(isimler+"<code> sort isimler dizisini sıralardık.</code><br>")
+
+        //indexof
+        document.write(isimler.indexOf("Ali")+"<code> indexof ile parametre içindeki öğenin kaçıncı öğe olduğunu gösteriyoruz.</code><br>")
+
+        //some
+        function yaskontrol(params) {
+
+          return params  >= 18 
+          
+        }
+        document.write(yaslar+"<br>")
+        document.write(yaslar.some(yaskontrol)+"<code> some ile bir fonksiyon yardımıyla diziyi kontrol ettik.</code><br>");
+
+
+
     </script>
 
     <!-- Optional JavaScript -->
