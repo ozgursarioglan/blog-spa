@@ -17,7 +17,55 @@
     <script type="text/JavaScript">
     /*
        Nesneler: JS Nesneler - String Nesnesi
+       1- length, Karakter uzunluğunu veriyor.
+       2- indexOf, Kaçıncı karakterden başlıyor onu söylüyor.
+       3- lastIndexOf, eğer aynı karakter varsa en sondakini verir.
+       4- search, indexOf ile aynı :)
+       5- substr, girilen değerden itibaran karakteri kesmeye yarar.
+       6- replace, seçilen karakteri siler yerine yine seçilen karakteri atar.
+       7- toLowerCase, Karakterleri küçültmeye yarar.
+       8- toUpperCase, Karakterleri büyütmeye yarar.
+       9- concat, İki karakteri birleştirmeye yarar.
+       10- split, bir karakter dizisini dizi nesnesine çeririyor.        
     */ 
+
+    var x = "Ali Ata Bak"
+
+    var y = "Ayşe Topu Tut"
+
+    document.write(x+"<br>")
+
+    //length
+    document.write(x.length+"<code> length ile karakter uzunluğunu buluruz.</code><br>")
+    
+    //indexOf
+    document.write(x.indexOf("Ata")+"<code> indexOf ile karakterin kaçınsı sıradan başladığını buluruz.</code><br>")
+
+    //lastIndexOf
+    document.write(x.lastIndexOf("Ata")+"<code> lastIndexOf ile eğer tekrar eden karakter varsa sonuncu olanın başlangıç değerini verir.</code><br>")
+
+    //search
+    document.write(x.search("Ali")+"<code> search indexOf ile aynı sadece kullanım olarak farklı.</code><br>")
+
+    //substr
+    document.write(x.substr(5)+"<code> substr kullanarak karakterleri kesebiliriz.</code><br>")
+
+    //replace
+    document.write(x.replace("Ali","Özgür")+"<code> replace kullnarak karakter içindeki bütün ali değerlerini özgür yaptık.</code><br>")
+
+    //toLowerCase
+    document.write(x.toLowerCase()+"<code> toLowerCase ile karakteri küçük karaktere çevirebiliriz.</code><br>");
+
+    //toUppberCase
+    document.write(x.toUpperCase()+"<code> toUpperCase ile karakteri büyük karaktere çevirebiliriz.</code><br>");
+
+    //concat
+    document.write(x.concat(" ",y)+"<code> concat ile karakterleri birleştirebiliriz.</code><br>");
+
+    //split
+    var dizi = x.split(" ")
+    document.write(dizi+"<code> split ile karakterleri dizeye çevirebiliriz.</code><br>")
+    console.log(dizi)
 
     </script>
 
