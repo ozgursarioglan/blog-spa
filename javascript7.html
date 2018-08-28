@@ -100,6 +100,85 @@
         
     }
    tekrarla(5)
+
+    /*
+    Hazır fonksiyonlar.
+    1- encodeURI, URL'leri kodluyor.
+    2- decodeURI, Kodlanmış URL'leri tekrar eski haline getiriyor.
+    3- eval, Fonksiyon vb yapılardan dönem statik değeri dinamik değerlere çevirmeye yarar. 
+    4- isFinite, Bir değeri kontrol eder. True / False dönver.
+    5- isNan, Kontrol eder. Eğer yanlış true döner.
+    6- number, String bir değeri number sayısal bir değere dönüştürür.
+    7- parseFloat, String bir değeri float bir değere döndürmeye yarıyor.
+    8- parseInt,
+    9- string
+    */
+
+    //encodeURI
+    var url = "www.google.com/anne=gülten&ad=özgür"
+    var eurl = "www.google.com/anne=g%C3%BClten&ad=%C3%B6zg%C3%BCr"
+
+    document.write(url+"<code> Normal bir Url.</code><br>")
+
+    document.write(encodeURI(url)+"<code> encodeURI ile kodlanmış bir Url.</code><br>")
+
+    document.write(decodeURI(eurl)+"<code> decodeURI ile çözümlenmiş bir Url.</code><br>")    
+
+    //eval
+    var deger1 = 12
+    var deger2 = 10
+
+    var deger3 = ("deger1+deger2")
+
+    document.write(eval(deger3)+"<code> eval ile fonksiyon vb yapılardan dönen string değerleri js değişkenlerine çevirdik. sanırım :)</code><br>")
+
+    //isFinite
+    var a = 1000;
+
+    document.write(isFinite(a)+"<code> isFinite ile değeri kontrol ettim. Standartlara uygun.</code><br>")
+
+
+    //inNaN
+    var fiyat = "AHMET"
+
+    var kdv = 6
+
+    var total = fiyat * kdv
+
+    if (isNaN(total)) {
+
+        document.write("Fiyat Yanlış Girişmiş"+"<code> isNoN ile sonunu kontrol ettirdik. Yanlış olduğu için evet yanlış yani tru döndü.</code><br>")
+        
+    } else {
+
+        document.write("Sonuç: "+total)
+
+    }
+
+    //Number
+
+    var dogum = "1995"
+
+    document.write(typeof dogum + dogum +"<br>")
+
+    document.write(typeof Number(dogum)+ dogum +"<code> Number ile string bir degeri sayısal bir formata dönüştürdük.</code><br>")
+
+    //parseFloat
+
+    document.write(typeof parseFloat(dogum) + dogum +"<code> parseFloat.</code><br>")
+
+    //parseInt
+
+    document.write(typeof parseInt(dogum) + dogum +"<code> parseInt.</code><br>")
+
+    //String
+
+    var isegiris = 2018
+
+    document.write(typeof isegiris + isegiris +"<br>")
+
+    document.write(typeof String(isegiris) + isegiris +"<code> String ile sayısal bir değeri metinsel bir değere dönüştürdük.</code><br>")
+
     </script>
 
     <!-- Optional JavaScript -->
