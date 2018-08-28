@@ -15,8 +15,91 @@
     <h1>JavaScript Fonksiyonlar</h1>
 
     <script type="text/JavaScript">
+
+    /*
+    Fonskiyonlar: Bir işlemi yerine getiren kod bloklarıdır.
+    Hazır Fonksiyonlar
+    Kullıcı Temelli Fonksiyonlar
+    */
     
-   
+    
+    //Parametresiz Fonksiyon.
+
+    function topla() {
+        var a=5,b=10;
+        return sonuc = a + b
+    }
+
+    document.write(topla()+"<code> Fonksiyon kullnarak toplama işlemi.</code><br>")
+
+    //Parametreli Fonksiyon.
+
+    function ToplaParam(sayi1, sayi2) {
+        document.write(sayi1+sayi2+"<code> Fonksiyona dışarıdan parametre göndererek toplama.</code><br>")   
+    }
+
+    ToplaParam(5,7)
+
+    //Ödev1
+    //Doğun yılımızı girdiğimizde bize yaşımızı hesaplasın.
+
+    function YasHesapla(yil) {
+        document.write(2018-yil+"<code> Ödev 1: Doğum yılımızı girerek yaş hesaplama.</code><br>")
+    }
+
+    YasHesapla(1995)
+
+    function YasAdHesapla(yil, ad) {
+        document.write(ad+" Yaşı "+(2018-yil)+"<code> Ödev 2: Doğum yılımızı ve adımızı girerek yaş hesaplama.</code><br>")
+    }
+
+    YasAdHesapla(1995,"Özgür")
+
+
+    //Return, Fonksiyondan dönen değeri döndürür.
+
+    function carp(a,b) {
+
+      var islem = a * b
+      return islem;
+        
+    }
+
+    document.write(carp(5,5)+"<code> Retrun ile bir fonksiyonun içindeki değeri dışarıya döndürdük.</code><br>")
+
+
+    //Fonksiyon Geçişleri
+    
+    var islem1 = function(yap1) {
+
+        yap1(30+20);
+        
+    }
+
+    var islem2 = function(yap2) {
+
+        document.write(10+yap2+"<code> Fonksiyon geçişlerine bir örnek. Ama anlamadım.</code><br>")
+        
+    }
+
+    islem1(islem2)
+
+    //Recursive Fonksiyonlar.
+
+
+    var i = 0, sonuc = 0;
+
+    function tekrarla(tk) {
+
+        if (i<tk) {
+            sonuc += i;
+            i++;
+            document.write((sonuc+i)+"<br>");
+            tekrarla(tk);
+        }
+        
+    }
+   tekrarla(5)
     </script>
 
     <!-- Optional JavaScript -->
