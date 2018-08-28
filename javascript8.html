@@ -18,7 +18,123 @@
     /*
        Nesneler
     */ 
-  
+
+    var bilgisayar = {
+
+        ram:"5 GB",
+        islemci:"İntel i7",
+        ekrankarti:"GTX 1070",
+        hdd:"500 GB"
+    }
+
+    
+
+    console.log(bilgisayar)
+
+    document.write(bilgisayar.ram+"<br>")
+    document.write(bilgisayar.islemci+"<br>")
+    document.write(bilgisayar.ekrankarti+"<br>")
+    document.write(bilgisayar.hdd+"<br>")
+
+    document.write("<br>")
+
+    function araba(marka,model,yil,km) {
+
+        this.markasi=marka;
+        this.modeli=model;
+        this.yili=yil;
+        this.kmsi=km
+        
+    }
+
+    var araba1 = new araba("Toyata","Corolla","2009","140000")
+    var araba2 = new araba("Opel","Astra","2001","190000")
+
+    console.log(araba1)
+    console.log(araba2)
+
+    document.write(araba1.markasi+"<br>")
+    document.write(araba1.modeli+"<br>")
+    document.write(araba1.yili+"<br>")
+    document.write(araba1.kmsi+"<br>")
+
+    document.write("<br>")
+
+    document.write(araba2.markasi+"<br>")
+    document.write(araba2.modeli+"<br>")
+    document.write(araba2.yili+"<br>")
+    document.write(araba2.kmsi+"<br>")
+
+
+
+
+    var arabalar = [
+        {
+            marka:"Toyata",
+            model:"Corolla",
+            yil:"2018",
+            km:"0"
+        },
+
+        {
+            marka:"Toyata",
+            model:"Yaris",
+            yil:"2018",
+            km:"0"
+        },
+
+        {
+            marka:"Toyata",
+            model:"Aruis",
+            yil:"2018",
+            km:"0"
+        },
+
+        {
+            marka:"Toyata",
+            model:"Hilux",
+            yil:"2018",
+            km:"0"
+        },
+    ];
+
+        for (listele in arabalar) {
+            
+           console.log(arabalar[listele])
+
+        }
+
+
+        var ogrenci = {
+            ad:"Ali",
+            soyad:"Sarioglan",
+            dogyil:1995,
+            adsoyad:function(){
+                return this.ad + "-" + this.soyad;
+            },
+            yas:function(){
+                return 2018 - this.dogyil;
+            }
+
+        }
+    
+        document.write(ogrenci.adsoyad()+"<br>")
+        document.write(ogrenci.yas()+"<br>")
+ 
+
+        function film(ad,yil,oyuncu) {
+            this.ad=ad;
+            this.yil=yil;
+            this.oyuncu=oyuncu;
+        }
+
+        film.prototype.fiyat = "5000"
+
+        var film1 = new film("Titanic","1999","Leonardo DiCaprio")
+
+        console.log(film1)
+
+
     </script>
 
     <!-- Optional JavaScript -->
