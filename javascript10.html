@@ -17,8 +17,56 @@
     <script type="text/JavaScript">
     /*
        Nesneler: JS Nesneler - Math Nesnesi
+       1- ceil, Yuvarlama yapar. Bir üste yuvarlama yapar.
+       2- floor, Yuvarlama yapar. Bir alta yuvarlar.
+       3- min ve max, bir dizedeki en büyük ve en küçük sayıları döndürür.
+       4- round, Yuvarlama yapar, En yakın sayıya.
+       5- sqrt, Sayının karakökünü verir.
+       6- random, rastgele sayı üretir.
+
     */ 
 
+    //ceil
+    var sayi1 = 3.14
+    document.write(Math.ceil(sayi1)+"<code> ceil ile 3,14 sayısını yukarıya yuvarladık.</code><br>")
+
+    //floor
+    var sayi2 = 2.6
+    document.write(Math.floor(sayi2)+"<code> floor ile 2,6 sayısını aşağıya yuvarladık.</code><br>")
+
+    //min, max
+    var max = Math.max(99,9,62,12)
+    document.write(max+"<code> max</code><br>")
+
+    var min = Math.min(99,9,62,12)
+    document.write(min+"<code> min</code><br>")
+
+    //round
+    var sayi3 = 3.9
+    document.write(Math.round(sayi3)+"<code> round ile sayıları en yakın olduğu tam sayıya yuvarlayabiliriz.</code><br>")
+
+    //sqrt
+    var sayi4 = 25
+    document.write(Math.sqrt(sayi4)+"<code> sqrt ile sayının karakökünü hesaplayabiliriz.</code><br>")
+
+    //random
+    var sayi5 = Math.floor(Math.random() * 10);
+
+    document.write(sayi5)
+
+    //Ödev
+
+
+    var sayi6 = Math.floor(Math.random() * 10);
+    if (sayi6 >= 1 && sayi6 <=5) {
+
+        swal(sayi6+" Kazandınız.")
+        
+    } else {
+
+        swal(sayi6+" Kaybettiniz.")
+        
+    }
 
     </script>
 
