@@ -16,9 +16,37 @@
 
     <script type="text/JavaScript">
     /*
-       Nesneler: JS Nesneler - Math Nesnesi
+       Nesneler: JS Nesneler - Date Nesnesi
+       getDate
     */ 
 
+    var tarih = new Date();
+
+    document.write(tarih.getDate()+"<code> getDate ile bugünün tarihi.</code><br>")
+
+    document.write(tarih.getDay()+"<code> getDay ile hangi gündeyiz.</code><br>")
+
+    document.write(tarih.getMonth()+"<code> getMonth ile hangi aydayız.</code><br>")
+
+    document.write(tarih.getFullYear()+"<code> getFullYear ile hangi yıldayız.</code><br>")
+
+    tarih.setDate(11)
+
+    document.write(tarih.getDate()+"<code> setDate tarihi değiştirebiliyoruz.</code><br>")
+
+    tarih.setFullYear(2017)
+
+    document.write(tarih.getFullYear()+"<code> getFullYear yılı değiştirebiliyoruz.</code><br>")
+
+    tarih.setMonth(1)
+
+    document.write(tarih.getMonth()+"<code> setMonth ile ayı değiştirebiliyoruz.</code><br>")
+
+    document.write(tarih.getHours())
+
+    document.write(tarih.getMinutes())
+
+    
     </script>
 
     <!-- Optional JavaScript -->
