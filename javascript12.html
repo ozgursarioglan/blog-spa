@@ -37,11 +37,26 @@
             </div>
         </div>
 
+
+        <div class="row">
+          <div class="col-sm">
+            <button type="button" onclick="linkyap()" class="btn btn-primary">Link Yap</button>
+          </div>
+          <div class="col-sm">
+            <a id="github">Özgür SARIOĞLAN</a>
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+
+        </div>
+
     </div>
     <script type="text/JavaScript">
         /* Nesneler: JS Nesneler - DOM (Document Object Model) */ 
         function renklendir() { 
-          
+
           document.getElementById("ozgur").className="alert alert-danger" 
           document.getElementById("ozgur").innerHTML="Kırmızı" 
           } 
@@ -51,6 +66,13 @@
           document.getElementById("ozgur").className="alert alert-primary"
           document.getElementById("ozgur").innerHTML="Mavi" 
           
+          }
+
+          function linkyap() {
+
+            console.log(document.getElementById("github"))
+            document.getElementById("github").setAttribute("href","https://github.com/ozgursarioglan")
+            document.getElementById("github").setAttribute("class","h2")
           }
 
     </script>
